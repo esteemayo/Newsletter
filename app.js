@@ -27,7 +27,7 @@ app.post('/signup', (req, res) => {
         return;
     }
 
-    // Construct req data
+    // CONSTRUCT REQ DATA
     const data = {
         members: [
             {
@@ -39,7 +39,7 @@ app.post('/signup', (req, res) => {
                 }
             }
         ]
-    }
+    };
 
     const postData = JSON.stringify(data);
 
@@ -50,7 +50,7 @@ app.post('/signup', (req, res) => {
             Authorization: config.get('key')
         },
         body: postData
-    }
+    };
 
     request(options, (error, response, body) => {
         if (error) {
