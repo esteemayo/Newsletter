@@ -1,7 +1,7 @@
 Handling newsletter subscribe form with Nodejs 
 *Tools*
 Express
-Handlebars
+Express-Handlebars
 Request
 Bootswatch
 Config
